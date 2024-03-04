@@ -1,0 +1,35 @@
+#include <Servo.h>
+
+
+Servo pinky;
+Servo ring;
+Servo middle;
+Servo index;
+Servo thumb;
+
+
+void setup() {
+  pinky.attach(13);
+  ring.attach(12);
+  middle.attach(11);
+  index.attach(10);
+  thumb.attach(9);
+
+}
+
+void loop() {
+  pinky.write(180);
+  ring.write(180);
+  middle.write(180);
+  index.write(180);
+  thumb.write(180);
+
+  delay(5000);
+  pinky.write(100);
+  ring.write(100);
+  middle.write(100);
+  index.write(100);
+  thumb.write(100);
+  delay(5000);
+
+}
